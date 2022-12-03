@@ -1,0 +1,53 @@
+{
+	"extensionName": {
+		"message": "Twitch.tv Per Channel Audio"
+	},
+	"extensionDescription": {
+		"message": "Enables having different audio settings per channel."
+	},
+	"extensionPopUpTitle": {
+		"message": "Twitch Per Channel Audio - Channel Settings"
+	},
+	"options": {
+		"message": "Options"
+	},
+	"current_volume": {
+		"message": "Current Volume: {volume}%"
+	},
+	"use_ffz_compressor": {
+		"message": "Use FrankerFaceZ Audio Compressor"
+	},
+	"ffz_unavailable": {
+		"message": "FrankerFaceZ extension is not installed or not finished loading yet."
+	},
+	"save_settings": {
+		"message": "Save settings"
+	},
+	"delete_settings": {
+		"message": "Delete settings"
+	},
+	"not_twitch": {
+		"message": "This extension only works on https://www.twitch.tv."
+	},
+	"no_active_channel": {
+		"message": "Current tab doesn't seem to have a live Twitch channel."
+	},
+	"channel": {
+		"message": "Channel"
+	},
+	"volume": {
+		"message": "Volume"
+	},
+	"delete": {
+		"message": "Delete"
+	},
+	"yes": {
+		"message": "Yes"
+	},
+	"no": {
+		"message": "No"
+	},
+	"no_saved_setting_exists": {
+		"message": "Current channel doesn't have any saved settings"
+	}
+}

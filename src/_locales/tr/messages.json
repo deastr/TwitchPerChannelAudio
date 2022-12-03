@@ -1,0 +1,53 @@
+{
+	"extensionName": {
+		"message": "Twitch.tv Kanal Başına Ses Ayarları"
+	},
+	"extensionDescription": {
+		"message": "Her kanal için farklı ses ayarı kullanmayı sağlar."
+	},
+	"extensionPopUpTitle": {
+		"message": "Twitch.tv Kanal Başına Ses - Kanal Ayarları"
+	},
+	"options": {
+		"message": "Ayarlar"
+	},
+	"current_volume": {
+		"message": "Şu Andaki Ses: %{volume}"
+	},
+	"use_ffz_compressor": {
+		"message": "FrankerFaceZ Ses Sıkıştırısı Kullan"
+	},
+	"ffz_unavailable": {
+		"message": "FrankerFaceZ eklentisi kurulu değil veya sayfa henüz yüklemeyi tamamlamadı."
+	},
+	"save_settings": {
+		"message": "Ayarları kaydet"
+	},
+	"delete_settings": {
+		"message": "Ayarları sil"
+	},
+	"not_twitch": {
+		"message": "Bu eklenti sadece https://www.twitch.tv sitesinde çalışır."
+	},
+	"no_active_channel": {
+		"message": "Aktif sekmede canlı yayın bulunamadı."
+	},
+	"channel": {
+		"message": "Kanal"
+	},
+	"volume": {
+		"message": "Ses"
+	},
+	"delete": {
+		"message": "Sil"
+	},
+	"yes": {
+		"message": "Evet"
+	},
+	"no": {
+		"message": "Hayır"
+	},
+	"no_saved_setting_exists": {
+		"message": "Şu andaki kanala ait kaydedilmiş ayar bulunmuyor"
+	}
+}

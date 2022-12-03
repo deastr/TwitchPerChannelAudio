@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<style>
+body {
+	margin: 10px;
+}
+
+.flex-row {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+	overflow: auto;
+	flex-direction: row;
+	margin: 5px;
+}
+
+.flex-column {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    overflow: auto;
+    flex-direction: column;
+	margin: 5px;
+}
+
+.channelName {
+	width: 150px;
+}
+
+.volume {
+	width: 100px;
+}
+
+.ffzComp {
+	width: 150px;
+}
+</style>
+
+<script type="application/javascript" src="browser-polyfill-for-chrome.min.js"></script>
+
+</head>
+<body>
+<div class="flex-column">
+	 <div class="flex-row">
+		<div class="channelName" id="channel"></div>
+		<div class="volume" id="volume"></div>
+		<div class="ffzComp" id="ffzComp"></div>
+		<div id="delete"></div>
+	</div>
+	<span id="rows">
+	</span>
+</div>
+<script src="options.js"></script>
+</body>
+</html>

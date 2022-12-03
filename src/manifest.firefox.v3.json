@@ -1,0 +1,64 @@
+{
+	"name": "__MSG_extensionName__",
+	"description": "__MSG_extensionDescription__",
+	"author": "deastr",
+	"manifest_version": 3,
+	"version": "1.0.0",
+	"homepage_url": "https://github.com/deastr/TwitchPerChannelAudio",
+	"icons": {
+		"32": "icons/icon32.png",
+		"36": "icons/icon36.png",
+		"48": "icons/icon48.png",
+		"128": "icons/icon128.png"
+	},
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "ttv_pca@deastr"
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*.twitch.tv/*"
+			],
+			"js": [
+				"content.js"
+			],
+			"run_at": "document_idle"
+		}
+	],
+	"action": {
+		"browser_style": true,
+		"default_area": "navbar",
+		"default_title": "__MSG_extensionPopUpTitle__",
+		"default_popup": "channel_settings.html",
+		"default_icon": {
+			"32": "icons/icon32.png",
+			"36": "icons/icon36.png",
+			"48": "icons/icon48.png",
+			"128": "icons/icon128.png"
+		}
+	},
+	"permissions": [
+		"tabs",
+		"storage"
+	],
+	"options_ui": {
+		"page": "options.html",
+		"browser_style": true
+	},
+	"default_locale": "en",
+	"web_accessible_resources": [
+		{
+			"resources": [
+				"content-inline.js"
+			],
+			"matches": [
+				"*://*.twitch.tv/*"
+			]
+		}
+	],
+	"host_permissions": [
+		"*://*.twitch.tv/*"
+	]
+}
