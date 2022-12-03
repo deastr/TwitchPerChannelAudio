@@ -89,7 +89,7 @@ function connectToTab(tabs){
 function showError(message) {
 	document.querySelector("#content").style.display = "none";
 	document.querySelector("#message").style.display = "table";
-	document.querySelector("#message_text").innerHTML = message;
+	document.querySelector("#message_text").innerText = message;
 }
 
 function processReplyMessage(message){
@@ -175,7 +175,7 @@ function openOptions() {
 
 document.querySelector("#options").alt = browser.i18n.getMessage("options");
 document.querySelector("#options").title = browser.i18n.getMessage("options");
-document.querySelector("#use_ffz_comp_message").innerHTML = browser.i18n.getMessage("use_ffz_compressor");
+document.querySelector("#use_ffz_comp_message").innerText = browser.i18n.getMessage("use_ffz_compressor");
 document.querySelector("#save").textContent = browser.i18n.getMessage("save_settings");
 document.querySelector("#remove").textContent = browser.i18n.getMessage("delete_settings");
 

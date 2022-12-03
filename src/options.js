@@ -23,15 +23,15 @@ function displaySavedChannels(channelList){
 		
 		var channelNameDiv = document.createElement("div");
 		channelNameDiv.classList.add("channelName");
-		channelNameDiv.innerHTML = channel_list[i].channelDisplayName;
+		channelNameDiv.innerText = channel_list[i].channelDisplayName;
 		
 		var volumeDiv = document.createElement("div");
 		volumeDiv.classList.add("volume");
-		volumeDiv.innerHTML = Math.round(channel_list[i].volume * 100) + "%";
+		volumeDiv.innerText = Math.round(channel_list[i].volume * 100) + "%";
 		
 		var ffzCompDiv = document.createElement("div");
 		ffzCompDiv.classList.add("ffzComp");
-		ffzCompDiv.innerHTML = channel_list[i].useFFZAudioCompressor ? browser.i18n.getMessage("yes") : browser.i18n.getMessage("no");
+		ffzCompDiv.innerText = channel_list[i].useFFZAudioCompressor ? browser.i18n.getMessage("yes") : browser.i18n.getMessage("no");
 		
 		var deleteDiv = document.createElement("div");
 		var buttonDelete = document.createElement("button");
@@ -60,9 +60,9 @@ function deleteSetting(channelName){
 		.then(() => loadSettings());
 }
 
-document.querySelector("#channel").innerHTML = "<b>" + browser.i18n.getMessage("channel") + "</b>";
-document.querySelector("#volume").innerHTML = "<b>" + browser.i18n.getMessage("volume") + "</b>";
-document.querySelector("#ffzComp").innerHTML = "<b>" + browser.i18n.getMessage("use_ffz_compressor") + "</b>";
-document.querySelector("#delete").innerHTML = "<b>" + browser.i18n.getMessage("delete") + "</b>";
+document.querySelector("#channel").innerText = browser.i18n.getMessage("channel");
+document.querySelector("#volume").innerText = browser.i18n.getMessage("volume");
+document.querySelector("#ffzComp").innerText = browser.i18n.getMessage("use_ffz_compressor");
+document.querySelector("#delete").innerText = browser.i18n.getMessage("delete");
 
 loadSettings();
