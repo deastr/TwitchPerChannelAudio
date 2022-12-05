@@ -13,7 +13,7 @@ Other browsers are not tested.
 
 ## Screenshots
 
-Settings popup:
+Settings popup on a live channel page:
 
 ![Popup](screenshots/popup.png)
 
