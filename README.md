@@ -9,7 +9,7 @@ It has two options:
 
 VOD and Clip pages are not supported.
 
-Other browsers not tested.
+Other browsers are not tested.
 
 ## Screenshots
 
